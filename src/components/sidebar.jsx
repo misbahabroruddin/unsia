@@ -8,7 +8,6 @@ import { ProfileSidebar } from "./profile-sidebar";
 
 export const Sidebar = () => {
   const pathname = usePathname();
-  console.log(pathname);
   const menus = [
     {
       label: "Dashboard",
@@ -57,7 +56,7 @@ export const Sidebar = () => {
     },
   ];
   return (
-    <aside className='max-w-[256px] w-full bg-[#10487A] min-h-dvh fixed left-0'>
+    <aside className='max-w-[256px] w-full bg-[#10487A] min-h-dvh hidden lg:block lg:fixed lg:left-0'>
       <div className='flex flex-col gap-2 p-4'>
         <ProfileSidebar />
         <ul className='flex flex-col gap-1'>

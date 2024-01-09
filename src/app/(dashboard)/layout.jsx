@@ -18,7 +18,9 @@ export default function HomeLayout({ children }) {
       </header>
       <div className='flex mt-20'>
         <Sidebar />
-        <main className='pt-4 pr-[35px] pl-4 grow ml-[256px]'>{children}</main>
+        <main className='pt-4 pr-[35px] pl-4 grow ml-0 lg:ml-[256px]'>
+          {children}
+        </main>
       </div>
     </>
   );
